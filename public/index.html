@@ -9,8 +9,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   </head>
+
+
   <body>
-    <h1>To Do Tracker</h1>
+  <nav class="navbar navbar-dark bg-primary">
+  <div class="nav navbar-nav">
+    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+    
+    <a class="nav-item nav-link" href="#" id ="logout">Logout</a>
+    <a class="nav-item nav-link" href="#">About</a>
+  </div>
+</nav>
+<div class="container-fluid">
+<div class ="row">
+<div class ="col-sm-4">
+</div>
+<div class ="col-sm-6">
+    <h1><span class="label label-success">To Do Tracker</span></h1>
+</div>
+<div class ="col-sm-4">
+</div>
+</div>
 
 <div class ="row">
 
@@ -33,7 +52,7 @@
   </ul>
   <div class="card-block" id ="cardFooter">
     <a href="#" class="btn btn-primary" id ="addTask">Add to List</a>
-    <a href="#" class="btn btn-primary">Delete selected items</a><br>
+    <a href="#" class="btn btn-danger" id ="deleteTask">Delete selected items</a><br>
 
     <br>
 
@@ -45,7 +64,10 @@
 </div>
 </div>
 
-
+<div class="alert alert-info" role="alert">
+  <strong>Wait!</strong> <a href="createAccount.html" class="alert-link" >Click here to create a account </a>, or <a href="login.html" class="alert-link" >  here to login </a>after you are done, to save your todo list.
+</div>
+</div>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
      <script src="app.js"></script>
